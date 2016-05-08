@@ -130,7 +130,7 @@ The command `grunt serve` explained below wil automatically start the API.
 
 Rebuild the lb-services.js file with the correct `API_URL` for development.
 
-    API_URL=http://0.0.0.0:3000/api grunt
+    API_URL=http://localhost:3000/api grunt
 
 To run the client you issue the command. This will also start the API.
 
