@@ -1,0 +1,43 @@
+{
+  "name": "value",
+  "plural": "values",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+        "typeName": "string",
+        "generated": true,
+        "id": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "customData": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "type": {
+      "type": "belongsTo",
+      "model": "type",
+      "foreignKey": ""
+    },
+    "locals": {
+      "type": "hasMany",
+      "model": "local",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

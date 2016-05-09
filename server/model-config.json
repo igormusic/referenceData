@@ -85,5 +85,27 @@
   "Meta": {
     "dataSource": "db",
     "public": true
+  },
+  "realm": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "type": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "value": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "local": {
+    "dataSource": "mongoDB",
+    "public": true
   }
 }

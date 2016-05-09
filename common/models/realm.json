@@ -1,0 +1,33 @@
+{
+  "name": "realm",
+  "plural": "realms",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "customData": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "types": {
+      "type": "hasMany",
+      "model": "type"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

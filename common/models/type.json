@@ -1,0 +1,42 @@
+{
+  "name": "type",
+  "plural": "types",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "generated": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "typeName": {
+      "type": "string",
+      "required": true
+    },
+    "customData": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "realm": {
+      "type": "belongsTo",
+      "model": "realm",
+      "foreignKey": ""
+    },
+    "values": {
+      "type": "hasMany",
+      "model": "value",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
