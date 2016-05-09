@@ -71,6 +71,14 @@
               label: gettextCatalog.getString('Description'),
               required: true
             }
+          },
+          {
+            key: 'customData',
+            type: 'textarea',
+            templateOptions: {
+              label: gettextCatalog.getString('CustomData'),
+              required: false
+            }
           }
         ];
       };
