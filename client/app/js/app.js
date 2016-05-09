@@ -44,6 +44,7 @@
       'com.module.events',
       'com.module.files',
       'com.module.notes',
+      'com.module.realms',
       'com.module.pages',
       'com.module.posts',
       'com.module.products',
