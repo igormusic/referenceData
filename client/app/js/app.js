@@ -180,6 +180,22 @@
           }
         }
       });
+      
+      formlyConfig.setType({
+        name: 'jsontext',
+        template: '<textarea json-text rows="5" cols="10" ng-model="model[options.key]"></textarea>',
+        wrapper: [
+          'bootstrapLabel',
+          'bootstrapHasError'
+        ],
+        defaultOptions: {
+          ngModelAttrs: ngModelAttrs,
+          templateOptions: {
+            jsontextOptions: {}
+          }
+        }
+        
+      });
     });
 
 })();
